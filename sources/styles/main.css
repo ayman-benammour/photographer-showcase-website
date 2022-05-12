@@ -13,6 +13,27 @@ body
     color: #6c6a68;
 }
 
+/* SCROLL BAR */
+::-webkit-scrollbar
+{
+    width: 10px;
+}
+
+  ::-webkit-scrollbar-track
+{
+    background: #424242;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background: #686868;
+}
+
+::-webkit-scrollbar-thumb:hover
+{
+    background: #7b7b7b; 
+}
+
 .button
 {
     display: inline-block;
@@ -23,6 +44,13 @@ body
     text-transform: uppercase;
     border: 2px solid #c0a064;
     cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.button:hover
+{
+    color: #ffffff;
+    background-color: #c0a064;
 }
 
 .centered
@@ -118,7 +146,6 @@ Landing
 .landing .sub-title
 {
     margin-bottom: 120px;
-    font-weight: 100;
     font-size: 24px;
 }
 
